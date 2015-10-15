@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   
   autocomplete :post, :subject, :full => true
+  autocomplete :post, :keyword, :full => true
 
   # GET /posts
   # GET /posts.json
