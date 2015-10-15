@@ -14,6 +14,14 @@
       <th>Name</th>
       <th>Title</th>
       <th>Subject</th>
+
+      <th>itemcode</th>
+      <th>productcode</th>
+      <th>description</th>
+      <th>keyword</th>
+      <th>url</th>
+      <th>image</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +32,14 @@
         <td><%= post.name %></td>
         <td><%= post.title %></td>
         <td><%= post.subject %></td>
+
+        <td><%= post.itemcode %></td>
+        <td><%= post.productcode %></td>
+        <td><%= post.description %></td>
+        <td><%= post.keyword %></td>
+        <td><%= post.url %></td>
+        <td><%= post.image %></td>
+
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
