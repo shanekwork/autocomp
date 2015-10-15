@@ -37,7 +37,7 @@
         <td><%= post.productcode %></td>
         <td><%= post.description %></td>
         <td><%= post.keyword %></td>
-        <td><%= post.url %></td>
+        <td><%= link_to image_tag(post.image), post.url %></td>
         <td><%= post.image %></td>
 
         <td><%= link_to 'Show', post %></td>
