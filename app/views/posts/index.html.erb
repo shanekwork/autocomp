@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p><br><br>
 
 <%= form_tag posts_path, :method => 'get' do %>
-  <%= autocomplete_field_tag :search, params[:search], autocomplete_post_subject_posts_path, placeholder: 'enter search here' %>
+  <%= autocomplete_field_tag :search, params[:search], autocomplete_post_keyword_posts_path, placeholder: 'enter search here' %>
   <%= submit_tag 'search', :name => nil %>
 <% end %>
 

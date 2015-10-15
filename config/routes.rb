@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :posts do
-    get :autocomplete_post_subject, on: :collection
+    get :autocomplete_post_keyword, on: :collection
   end
   root 'posts#index'
   
